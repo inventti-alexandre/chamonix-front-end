@@ -1,0 +1,21 @@
+<div class="row">
+  <div (click)="mesaVisao(mesa)" *ngFor="let mesa of mesas" class="col-md-2">
+      <div class="panel" [ngClass]="{'mesa-livre': mesa.disponivel, 'mesa-ocupada': !mesa.disponivel}">
+        <div class="panel-heading" style="color: #fff;" [ngClass]="{'mesa-livre': mesa.disponivel, 'mesa-ocupada': !mesa.disponivel}">
+          {{ mesa.descricao }}
+          <span><small>{{ mesa.inicio | date: 'HH:mm' }}</small></span>
+        </div>
+        <div class="panel-body" style="color: #000000;">
+          <div class="row">
+            <div class="col-md-4">
+              <h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></h3>
+            </div>
+            <div class="col-md-8">
+              <small *ngIf="mesa.disponivel">{{ mesa.lugares }} L</small>
+              <small *ngIf="!mesa.disponivel">{{ mesa.clientes }} C</small>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
