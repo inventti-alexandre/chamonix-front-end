@@ -32,7 +32,7 @@ export class ProdutoAlterarComponent implements OnInit {
 
   gravar() {
     this.model.descricao = this.model.descricao.toUpperCase().trim();
-    this.model.detalhe = this.model.detalhe.toUpperCase().trim();
+    this.model.detalhe = this.model.detalhe;
     this.service.put(this.model).subscribe(
       data => this.fecharModal.emit(true),
       error => alert('Erro ao gravar')

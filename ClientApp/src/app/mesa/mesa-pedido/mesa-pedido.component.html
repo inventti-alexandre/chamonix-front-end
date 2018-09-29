@@ -1,0 +1,2 @@
+<app-mesa-pedido-categoria *ngIf="modalCategoria" (categoria)="selCategoria($event)"></app-mesa-pedido-categoria>
+<app-mesa-pedido-produtos *ngIf="modalProduto" [categoriaId]="categoria.categoriaId" (produto)="selProduto($event)"></app-mesa-pedido-produtos>

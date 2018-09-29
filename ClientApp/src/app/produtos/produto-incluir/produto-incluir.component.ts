@@ -30,7 +30,7 @@ export class ProdutoIncluirComponent implements OnInit {
 
   gravar() {
     this.produto.descricao = this.produto.descricao.toUpperCase();
-    this.produto.detalhe = this.produto.detalhe.toUpperCase();
+    this.produto.detalhe = this.produto.detalhe;
     this.service.post(this.produto).subscribe(
       data => this.fecharModal.emit(true),
       error => alert('Erro ao gravar')

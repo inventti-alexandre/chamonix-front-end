@@ -32,6 +32,11 @@ import { MesasExcluirComponent } from './mesas/mesas-excluir/mesas-excluir.compo
 import { MesaComponent } from './mesa/mesa.component';
 import { MesaPosicaoComponent } from './mesa/mesa-posicao/mesa-posicao.component';
 import { MesaClientesComponent } from './mesa/mesa-clientes/mesa-clientes.component';
+import { MesaResumoComponent } from './mesa/mesa-resumo/mesa-resumo.component';
+import { MesaPedidoComponent } from './mesa/mesa-pedido/mesa-pedido.component';
+import { MesaPedidoCategoriaComponent } from './mesa/mesa-pedido/mesa-pedido-categoria/mesa-pedido-categoria.component';
+import { MesaPedidoProdutosComponent } from './mesa/mesa-pedido/mesa-pedido-produtos/mesa-pedido-produtos.component';
+import { MesaPedidoProdutoComponent } from './mesa/mesa-pedido/mesa-pedido-produto/mesa-pedido-produto.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +67,12 @@ import { MesaClientesComponent } from './mesa/mesa-clientes/mesa-clientes.compon
     MesasExcluirComponent,
     MesaPosicaoComponent,
     MesaComponent,
-    MesaClientesComponent
+    MesaClientesComponent,
+    MesaResumoComponent,
+    MesaPedidoComponent,
+    MesaPedidoCategoriaComponent,
+    MesaPedidoProdutosComponent,
+    MesaPedidoProdutoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

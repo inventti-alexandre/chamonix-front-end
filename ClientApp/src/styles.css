@@ -4,8 +4,8 @@ input[type="number"] { max-width: 140px;}
 a { cursor: pointer;}
 .panel-red { background-color: red}
 .panel-black { background-color: black}
-.padding-10 { padding: 10px; }  
-.padding-20 { padding: 20px; }  
+.padding-10 { padding: 10px; }
+.padding-20 { padding: 20px; }
 .padding-top-10 { padding-top: 10px; }
 .padding-top-20 { padding-top: 20px; }
 .modal-dialog {
@@ -17,3 +17,4 @@ a { cursor: pointer;}
 }
 .mesa-livre { background-color: green; color: #fff;}
 .mesa-ocupada { background-color:black; color: #fff; }
+.categoria-btn { width:160px; height: 70px; border-radius: 0px !important; margin: 0 3px 3px 0 !important; line-height: 58px !important;}
